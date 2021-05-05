@@ -15,7 +15,7 @@ npm install --save-dev @tongtian/prettier-preset
 ## npm 版本 6 及以下
 
 ```sh
-npx install-peerdeps --dev @tongtian/prettier-preset
+npx install --save-dev @tongtian/prettier-preset prettier
 ```
 
 # 用法
