@@ -17,9 +17,18 @@ module.exports = (api, opts) => {
       isTestEnv && [
         require('@babel/preset-env'),
         {
+          useBuiltIns: 'usage',
           targets: {
             node: 'current',
           },
+          corejs: {
+            version: require('core-js/package.json').version,
+            proposals: true,
+          },
+          modules: 'auto', // 测试环境使用默认配置"auto"
+          exclude: ['transform-typeof-symbol'],
+          bugfixes: true, // Babel8默认支持
+          loose: true,
         },
       ],
       !isTestEnv && [
@@ -32,8 +41,9 @@ module.exports = (api, opts) => {
             proposals: true,
           },
           exclude: ['transform-typeof-symbol'],
-          modules: false,
-          bugfixes: true,
+          modules: false, // 保留ES模块
+          bugfixes: true, // Babel8默认支持
+          loose: true, // 允许这个preset内的所有插件使用"宽松"的编译方式
         },
       ],
       [
@@ -54,7 +64,6 @@ module.exports = (api, opts) => {
     ].filter(Boolean),
     plugins: [
       [require('@babel/plugin-proposal-decorators'), { legacy: true }],
-      [require('@babel/plugin-proposal-class-properties'), { loose: true }],
       [
         require('@babel/plugin-transform-runtime'),
         {
