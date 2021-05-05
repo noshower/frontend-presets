@@ -14,6 +14,6 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: './tsconfig.json',
   },
-  extends: ['@tongtian/eslint-preset-base', 'airbnb-typescript', 'airbnb/hooks'],
+  extends: ['@tongtian/eslint-config-base-preset', 'airbnb-typescript', 'airbnb/hooks'],
   plugins: ['jest'],
 };

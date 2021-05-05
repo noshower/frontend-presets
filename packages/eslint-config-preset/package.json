@@ -1,6 +1,6 @@
 {
-  "name": "@tongtian/eslint-preset",
-  "version": "1.3.1",
+  "name": "@tongtian/eslint-config-preset",
+  "version": "1.0.0",
   "description": "eslint 通用配置",
   "keywords": [
     "eslint",
@@ -9,7 +9,7 @@
   ],
   "author": "吴震宇 <wu.zhenyu@darcytech.com>",
   "license": "MIT",
-  "main": "lib/eslint-preset.js",
+  "main": "lib/eslint-config-preset.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/noshower/frontend-presets#readme",
   "peerDependencies": {
-    "@tongtian/eslint-base-preset": "^1.3.0",
+    "@tongtian/eslint-config-base-preset": "^1.3.0",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
     "eslint": "^7.25.0",
