@@ -15,7 +15,7 @@ npm install --save-dev @tongtian/babel-preset
 ## npm 版本 6 及以下
 
 ```sh
-npm install --save-dev @tongtian/babel-preset @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react @babel/preset-typescript @babel/runtime @babel/runtime-corejs3 core-js
+npm install --save-dev @tongtian/babel-preset @babel/core  @babel/plugin-proposal-decorators @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react @babel/preset-typescript @babel/runtime @babel/runtime-corejs3 core-js
 ```
 
 ## npm 版本 5.0+也可以按下面的方式安装
