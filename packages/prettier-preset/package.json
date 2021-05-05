@@ -1,0 +1,34 @@
+{
+  "name": "@tongtian/prettier-preset",
+  "version": "1.0.0",
+  "description": "prettier的通用配置",
+  "keywords": [
+    "prettier"
+  ],
+  "author": "吴震宇 <wu.zhenyu@darcytech.com>",
+  "license": "MIT",
+  "main": "lib/prettier-preset.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noshower/frontend-presets.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/noshower/frontend-presets/issues"
+  },
+  "homepage": "https://github.com/noshower/frontend-presets#readme",
+  "peerDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
