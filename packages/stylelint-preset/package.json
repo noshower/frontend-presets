@@ -1,0 +1,41 @@
+{
+  "name": "@tongtian/stylelint-preset",
+  "version": "1.0.0",
+  "description": "整合通用的stylelint规则",
+  "keywords": [],
+  "author": "吴震宇 <wu.zhenyu@darcytech.com>",
+  "license": "ISC",
+  "main": "lib/stylelint-preset.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noshower/frontend-presets.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/noshower/frontend-presets/issues"
+  },
+  "homepage": "https://github.com/noshower/frontend-presets#readme",
+  "peerDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recess-order": "^2.4.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-declaration-use-variable": "^1.7.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^3.19.0"
+  }
+}
