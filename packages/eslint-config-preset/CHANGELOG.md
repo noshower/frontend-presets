@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/noshower/frontend-presets/compare/@tongtian/eslint-config-preset@1.1.1...@tongtian/eslint-config-preset@1.1.2) (2021-05-05)
+
+
+### Bug Fixes
+
+* **eslint-config-preset:** 修复tsconfig.json文件路径找不到的问题 ([8bdbabb](https://github.com/noshower/frontend-presets/commit/8bdbabb53901a7e634b39cd430a6d335e4cb0e37))
+
+
+
+
+
 ## [1.1.1](https://github.com/noshower/frontend-presets/compare/@tongtian/eslint-config-preset@1.1.0...@tongtian/eslint-config-preset@1.1.1) (2021-05-05)
 
 
