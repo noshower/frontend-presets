@@ -1,0 +1,43 @@
+{
+  "name": "@tongtian/eslint-base-preset",
+  "version": "1.0.0",
+  "description": "eslint 通用基础配置",
+  "keywords": [],
+  "author": "吴震宇 <wu.zhenyu@darcytech.com>",
+  "license": "MIT",
+  "main": "lib/eslint-base-preset.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noshower/frontend-presets.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/noshower/frontend-presets/issues"
+  },
+  "homepage": "https://github.com/noshower/frontend-presets#readme",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "gitHead": "d434c09182bc9baf4e373720504a21783de480da"
+}
