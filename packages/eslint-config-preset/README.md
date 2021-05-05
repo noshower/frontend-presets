@@ -1,8 +1,8 @@
 # `@tongtian/eslint-config-preset`
 
-# 简介
+## 简介
 
-整理 eslint 的通用配置。
+整理 eslint 的通用配置, 支持 Typescript 、React
 
 ## 安装
 
@@ -20,6 +20,14 @@ npm install --save-dev @tongtian/eslint-config-preset @tongtian/eslint-config-ba
 
 ```
 module.exports = {
-  extends: ['@tongtian/eslint-config-preset'],
+  extends: ['@tongtian/preset'],
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: './tsconfig.json',
+  }
 };
 ```
+
+## 常见问题
+
+请看这个[链接](https://www.npmjs.com/package/eslint-config-airbnb-typescript)

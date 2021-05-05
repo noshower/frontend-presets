@@ -11,8 +11,6 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 2021,
-    tsconfigRootDir: __dirname,
-    project: './tsconfig.json',
   },
   extends: ['@tongtian/eslint-config-base-preset', 'airbnb-typescript', 'airbnb/hooks'],
   plugins: ['jest'],
