@@ -1,6 +1,6 @@
 {
   "name": "@tongtian/eslint-base-preset",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "eslint 通用基础配置",
   "keywords": [],
   "author": "吴震宇 <wu.zhenyu@darcytech.com>",
