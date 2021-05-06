@@ -8,13 +8,13 @@ module.exports = {
   },
   parserOptions: {
     requireConfigFile: true,
-    sourceType: "module",
+    sourceType: 'module',
     allowImportExportEverywhere: false,
     ecmaVersion: 2021,
     ecmaFeatures: {
       jsx: true,
     },
   },
-  extends: ["airbnb-base", "plugin:jest/recommended", "plugin:prettier/recommended"],
-  plugins: ["jest"],
+  extends: ['airbnb-base', 'plugin:jest/recommended', 'plugin:prettier/recommended'],
+  plugins: ['jest'],
 };
