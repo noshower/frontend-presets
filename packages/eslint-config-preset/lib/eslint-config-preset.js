@@ -1,5 +1,4 @@
 module.exports = {
-  root: true,
   env: {
     browser: true,
     node: true,
@@ -12,6 +11,29 @@ module.exports = {
     },
     ecmaVersion: 2021,
   },
-  extends: ['@tongtian/eslint-config-base-preset', 'airbnb-typescript', 'airbnb/hooks'],
+  settings: {
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
+  },
+  overrides: [
+    {
+      files: ['**/*.tsx'],
+      rules: {
+        'react/prop-types': 'off',
+      },
+    },
+  ],
+  extends: ['airbnb-typescript', 'airbnb/hooks', 'plugin:@typescript-eslint/recommended', 'plugin:jest/recommended', 'plugin:prettier/recommended'],
   plugins: ['jest'],
+  rules: {
+    'import/prefer-default-export': 'off',
+  },
 };
