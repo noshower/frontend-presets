@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/noshower/frontend-presets/compare/@tongtian/eslint-config-preset@1.1.2...@tongtian/eslint-config-preset@1.1.3) (2021-05-06)
+
+
+### Bug Fixes
+
+* **eslint-config-preset:** 解决import/extensions规则配置错误问题 ([d001dd2](https://github.com/noshower/frontend-presets/commit/d001dd232b1405398d8aac33ce897c383e583cfe))
+
+
+
+
+
 ## [1.1.2](https://github.com/noshower/frontend-presets/compare/@tongtian/eslint-config-preset@1.1.1...@tongtian/eslint-config-preset@1.1.2) (2021-05-05)
 
 
