@@ -1,32 +1,36 @@
 # `@tongtian/babel-preset`
 
-# 简介
+## 简介
 
 这个 package 是专为 react 应用设计的 babel 预设。
 
-# 安装
+## 依赖
 
-## npm 版本 7 及以上
+![](https://cdn.nlark.com/yuque/0/2021/jpeg/1065536/1620293622944-3cb7b531-7dd5-4f2d-a0bb-161c4c0af204.jpeg)
+
+## 安装
+
+### npm 版本 7 及以上
 
 ```sh
 npm install --save-dev @tongtian/babel-preset
 ```
 
-## npm 版本 6 及以下
+### npm 版本 6 及以下
 
 ```sh
 npm install --save-dev @tongtian/babel-preset @babel/core  @babel/plugin-proposal-decorators @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react @babel/preset-typescript @babel/runtime @babel/runtime-corejs3 core-js
 ```
 
-## npm 版本 5.0+也可以按下面的方式安装
+### npm 版本 5.0+也可以按下面的方式安装
 
 ```sh
 npx install-peerdeps --dev @tongtian/babel-preset
 ```
 
-# 用法
+## 用法
 
-## 配置选项
+### 配置选项
 
 | 选项          | 含义                                                                                               | 默认值                                                   |
 | ------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
@@ -34,7 +38,7 @@ npx install-peerdeps --dev @tongtian/babel-preset
 | useTypeScript | 是否使用 TypeScript                                                                                | true                                                     |
 | runtime       | 编译 JSX 使用哪个运行时, React17 推荐使用 automatic (babel7.9.0 开始支持), 旧版 react 使用 classic | classic                                                  |
 
-## 默认使用
+### 默认使用
 
 ```json
 // .babelrc
@@ -43,7 +47,7 @@ npx install-peerdeps --dev @tongtian/babel-preset
 }
 ```
 
-## 不使用 Typescript
+### 不使用 Typescript
 
 ```json
 // .babelrc
@@ -52,7 +56,7 @@ npx install-peerdeps --dev @tongtian/babel-preset
 }
 ```
 
-# 最佳实践
+## 最佳实践
 
 ### 使用.browserslistrc 文件指定目标环境
 
