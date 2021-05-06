@@ -11,18 +11,6 @@ module.exports = {
     },
     ecmaVersion: 2021,
   },
-  settings: {
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never',
-      },
-    ],
-  },
   overrides: [
     {
       files: ['**/*.tsx'],
@@ -31,7 +19,7 @@ module.exports = {
       },
     },
   ],
-  extends: ['airbnb-typescript', 'airbnb/hooks', 'plugin:@typescript-eslint/recommended', 'plugin:jest/recommended', 'plugin:prettier/recommended'],
+  extends: ['@tongtian/base-preset', 'airbnb-typescript', 'airbnb/hooks'],
   plugins: ['jest'],
   rules: {
     'import/prefer-default-export': 'off',
