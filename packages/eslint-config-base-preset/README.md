@@ -2,7 +2,7 @@
 
 ## 简介
 
-整理 eslint 的 typescript 基础配置，不支持 React。如果需要支持 React, 请使用 [@tongtian/eslint-config-preset](https://www.npmjs.com/package/@tongtian/eslint-config-preset)
+整理 eslint 的 typescript 基础配置，不支持 React。如果需要支持检查 React, 请使用 [@tongtian/eslint-config-preset](https://www.npmjs.com/package/@tongtian/eslint-config-preset)
 
 ## 依赖
 
