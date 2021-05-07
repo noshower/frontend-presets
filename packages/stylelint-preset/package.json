@@ -1,6 +1,6 @@
 {
   "name": "@tongtian/stylelint-preset",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "整合通用的stylelint规则",
   "keywords": [
     "stylelint",
