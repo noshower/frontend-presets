@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/noshower/frontend-presets/compare/@tongtian/babel-preset@1.1.4...@tongtian/babel-preset@1.1.7) (2021-05-07)
+
+
+### Bug Fixes
+
+* **babel-preset:** 修正版本 ([55dc2b8](https://github.com/noshower/frontend-presets/commit/55dc2b833fbffbcd8033345976fc21bd9e4c0289))
+
+
+
+
+
 ## [1.1.4](https://github.com/noshower/frontend-presets/compare/@tongtian/babel-preset@1.1.3...@tongtian/babel-preset@1.1.4) (2021-05-06)
 
 **Note:** Version bump only for package @tongtian/babel-preset
