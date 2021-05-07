@@ -20,7 +20,7 @@
     "jest",
     "@typescript-eslint"
   ],
-  "author": "吴震宇 <wu.zhenyu@darcytech.com>",
+  "author": "noshower",
   "license": "MIT",
   "main": "lib/eslint-config-base-preset.js",
   "directories": {
@@ -52,6 +52,5 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-prettier": "^3.4.0"
-  },
-  "gitHead": "d434c09182bc9baf4e373720504a21783de480da"
+  }
 }
