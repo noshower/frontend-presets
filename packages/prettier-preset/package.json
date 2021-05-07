@@ -5,7 +5,7 @@
   "keywords": [
     "prettier"
   ],
-  "author": "吴震宇 <wu.zhenyu@darcytech.com>",
+  "author": "noshower",
   "license": "MIT",
   "main": "lib/prettier-preset.js",
   "directories": {
