@@ -1,6 +1,6 @@
 {
   "name": "@tongtian/prettier-preset",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "prettier的通用配置",
   "keywords": [
     "prettier"
