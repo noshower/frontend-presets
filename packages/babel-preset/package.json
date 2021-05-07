@@ -1,6 +1,6 @@
 {
   "name": "@tongtian/babel-preset",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "专为react app 提供的Babel preset",
   "keywords": [
     "Babel",
