@@ -10,6 +10,7 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 2021,
+    sourceType: 'module',
   },
   overrides: [
     {
@@ -19,7 +20,7 @@ module.exports = {
       },
     },
   ],
-  extends: ['@tongtian/base-preset', 'airbnb-typescript', 'airbnb/hooks'],
+  extends: ['airbnb-typescript', 'airbnb/hooks', 'plugin:@typescript-eslint/recommended', 'plugin:jest/recommended', 'plugin:prettier/recommended'],
   plugins: ['jest'],
   rules: {
     'import/prefer-default-export': 'off',
