@@ -13,17 +13,14 @@ module.exports = (api, opts) => {
   const isTestEnv = api.env('test');
 
   return {
-    // 7.13.0开始添加了顶级的 targets 选项
-    targets: isTestEnv
-      ? {
-          node: 'current',
-        }
-      : targets,
     presets: [
       isTestEnv && [
         require('@babel/preset-env'),
         {
           useBuiltIns: 'usage',
+          targets: {
+            node: 'current',
+          },
           corejs: {
             version: require('core-js/package.json').version,
             proposals: true,
@@ -42,6 +39,7 @@ module.exports = (api, opts) => {
             version: require('core-js/package.json').version,
             proposals: true,
           },
+          targets,
           exclude: ['transform-typeof-symbol'],
           modules: false, // 保留ES模块
           bugfixes: true, // Babel8默认支持
