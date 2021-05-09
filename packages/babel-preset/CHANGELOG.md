@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/noshower/frontend-presets/compare/@tongtian/babel-preset@1.1.8...@tongtian/babel-preset@1.2.0) (2021-05-09)
+
+
+### Features
+
+* **babel-preset:** 将targets选项从env移到了顶层 ([da4a8af](https://github.com/noshower/frontend-presets/commit/da4a8af48124eeb33c39f0c8fb18858298984e1e))
+
+
+
+
+
 ## [1.1.8](https://github.com/noshower/frontend-presets/compare/@tongtian/babel-preset@1.1.7...@tongtian/babel-preset@1.1.8) (2021-05-07)
 
 **Note:** Version bump only for package @tongtian/babel-preset
