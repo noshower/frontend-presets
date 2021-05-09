@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/noshower/frontend-presets/compare/@tongtian/babel-preset@1.2.1...@tongtian/babel-preset@1.3.0) (2021-05-09)
+
+
+### Features
+
+* **babel-preset:** 去掉了targets配置,推荐使用顶级的targets配置 ([09b3927](https://github.com/noshower/frontend-presets/commit/09b3927e30bab86162dbc178ab7c23e7ee01a206))
+
+
+
+
+
 ## [1.2.1](https://github.com/noshower/frontend-presets/compare/@tongtian/babel-preset@1.2.0...@tongtian/babel-preset@1.2.1) (2021-05-09)
 
 
