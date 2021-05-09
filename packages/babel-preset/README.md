@@ -85,7 +85,7 @@ process.env.NODE_ENV = "production";
 
 有助于减少线上包的大小。
 
-# 特点
+## 特点
 
 - 支持按需引入 polyfill
 - 不污染全局环境
@@ -95,7 +95,7 @@ process.env.NODE_ENV = "production";
 - 支持装饰器
 - 支持大部分 Javascript 标准
 
-# 支持的语言特性
+## 支持的语言特性
 
 支持最新的 JavaScript 标准。除了 ES6 语法功能外，它还支持：
 
@@ -106,7 +106,8 @@ process.env.NODE_ENV = "production";
 - ES2017（例如：Object.entries）
 - ES2016（例如：Array.prototype.includes）
 - ES2015
+- 支持 Class 的私有字段、私有方法、静态字段
 
-# 注意
+## 注意
 
 不支持 Proxy, 不支持 BigInt

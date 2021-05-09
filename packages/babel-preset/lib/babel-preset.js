@@ -13,14 +13,17 @@ module.exports = (api, opts) => {
   const isTestEnv = api.env('test');
 
   return {
+    // 7.13.0开始添加了顶级的 targets 选项
+    targets: isTestEnv
+      ? {
+          node: 'current',
+        }
+      : targets,
     presets: [
       isTestEnv && [
         require('@babel/preset-env'),
         {
           useBuiltIns: 'usage',
-          targets: {
-            node: 'current',
-          },
           corejs: {
             version: require('core-js/package.json').version,
             proposals: true,
@@ -35,7 +38,6 @@ module.exports = (api, opts) => {
         require('@babel/preset-env'),
         {
           useBuiltIns: 'usage',
-          targets,
           corejs: {
             version: require('core-js/package.json').version,
             proposals: true,
@@ -63,13 +65,14 @@ module.exports = (api, opts) => {
       ],
     ].filter(Boolean),
     plugins: [
+      // babel 7.14.0开始，@babel/preset-env 已经内置了@babel/plugin-proposal-class-properties 和 @babel/plugin-proposal-private-methods
       [require('@babel/plugin-proposal-decorators'), { legacy: true }],
       [
         require('@babel/plugin-transform-runtime'),
         {
           corejs: { version: 3, proposals: true },
           version: require('@babel/runtime/package.json').version,
-          useESModules: true,
+          useESModules: true, // useESModules选项将在Babel8过期，https://babeljs.io/blog/2021/02/22/7.13.0
           helpers: true,
           regenerator: true,
         },
