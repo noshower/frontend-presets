@@ -4,7 +4,7 @@ const onlyRemoveTypeImportsAble = () => {
 };
 
 module.exports = (api, opts) => {
-  const { useTypeScript = true, targets, runtime = 'classic' } = opts;
+  const { useTypeScript = true, runtime = 'classic' } = opts;
 
   if (typeof useTypeScript !== 'boolean') {
     throw new Error('useTypeScript 的有效值是布尔值');
@@ -14,24 +14,7 @@ module.exports = (api, opts) => {
 
   return {
     presets: [
-      isTestEnv && [
-        require('@babel/preset-env'),
-        {
-          useBuiltIns: 'usage',
-          targets: {
-            node: 'current',
-          },
-          corejs: {
-            version: require('core-js/package.json').version,
-            proposals: true,
-          },
-          modules: 'auto', // 测试环境使用默认配置"auto"
-          exclude: ['transform-typeof-symbol'],
-          bugfixes: true, // Babel8默认支持
-          loose: true,
-        },
-      ],
-      !isTestEnv && [
+      [
         require('@babel/preset-env'),
         {
           useBuiltIns: 'usage',
@@ -39,9 +22,8 @@ module.exports = (api, opts) => {
             version: require('core-js/package.json').version,
             proposals: true,
           },
-          targets,
           exclude: ['transform-typeof-symbol'],
-          modules: false, // 保留ES模块
+          modules: isTestEnv ? 'auto' : false, // 保留ES模块
           bugfixes: true, // Babel8默认支持
           loose: true, // 允许这个preset内的所有插件使用"宽松"的编译方式
         },

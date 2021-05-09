@@ -32,17 +32,19 @@ npx install-peerdeps --dev @tongtian/babel-preset
 
 ### 配置选项
 
-| 选项          | 含义                                                                                               | 默认值                                                   |
-| ------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| targets       | 代码运行需要支持的环境 ,推荐使用 **.browserslistrc** 文件指定目标环境                              | 默认支持所有浏览器，即会将 ES6 及以上代码转换为 ES5 代码 |
-| useTypeScript | 是否使用 TypeScript                                                                                | true                                                     |
-| runtime       | 编译 JSX 使用哪个运行时, React17 推荐使用 automatic (babel7.9.0 开始支持), 旧版 react 使用 classic | classic                                                  |
+| 选项          | 含义                                                                                               | 默认值  |
+| ------------- | -------------------------------------------------------------------------------------------------- | ------- |
+| useTypeScript | 是否使用 TypeScript                                                                                | true    |
+| runtime       | 编译 JSX 使用哪个运行时, React17 推荐使用 automatic (babel7.9.0 开始支持), 旧版 react 使用 classic | classic |
 
-### 默认使用
+### 直接使用
+
+babel 7.13.0 开始，可以直接在配置顶层设置 targets
 
 ```json
 // .babelrc
 {
+  "targets": "> 0.25%, not dead",
   "presets": ["@tongtian/babel-preset"]
 }
 ```
@@ -52,6 +54,7 @@ npx install-peerdeps --dev @tongtian/babel-preset
 ```json
 // .babelrc
 {
+  "targets": "> 0.25%, not dead",
   "presets": [["@tongtian/babel-preset", { "useTypeScript": false }]]
 }
 ```
@@ -83,7 +86,20 @@ process.env.BABEL_ENV = "production";
 process.env.NODE_ENV = "production";
 ```
 
-有助于减少线上包的大小。
+使用 React 时，有助于减少线上包的大小。
+
+### 为测试设置 targets
+
+```
+{
+  "targets": {
+   "node": "current",
+  },
+  "presets": ["@tongtian/babel-preset"]
+}
+```
+
+当 node 版本保持较新时，有助于提高测试效率。因为减少了测试过程中，代码的转换。
 
 ## 特点
 
