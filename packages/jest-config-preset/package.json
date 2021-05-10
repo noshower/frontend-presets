@@ -1,0 +1,36 @@
+{
+  "name": "@tongtian/jest-config-preset",
+  "version": "1.1.0",
+  "description": "jest 基础的可共享配置",
+  "keywords": [
+    "jest",
+    "jest-config",
+    "preset",
+    "babel-jest",
+    "jest-dom",
+    "jest-circus",
+    "jest-watch-typeahead"
+  ],
+  "author": "noshower",
+  "license": "MIT",
+  "main": "jest-preset.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noshower/frontend-presets.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/noshower/frontend-presets/issues"
+  },
+  "homepage": "https://github.com/noshower/frontend-presets#readme",
+  "dependencies": {
+    "identity-obj-proxy": "^3.0.0",
+    "jest-circus": "^26.6.3",
+    "jest-watch-typeahead": "^0.6.3"
+  }
+}
