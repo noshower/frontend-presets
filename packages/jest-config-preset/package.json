@@ -12,6 +12,12 @@
     "jest-watch-typeahead"
   ],
   "author": "noshower",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
   "license": "MIT",
   "main": "jest-preset.js",
   "repository": {

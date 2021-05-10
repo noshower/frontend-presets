@@ -4,7 +4,8 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'], // 默认值，指定模块文件的扩展名数组
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/node_modules/jest-config-preset/fileMock.js',
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      '<rootDir>/node_modules/@tongtian/jest-config-preset/lib/fileMock.js',
   },
   resetMocks: true, // 每次测试前自动重置 mock 状态
   roots: ['<rootDir>'], // 默认值， jest 会在该配置中的路径下查找文件
