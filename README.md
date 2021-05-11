@@ -15,3 +15,5 @@
 [@tongtian/prettier-preset](https://github.com/noshower/frontend-presets/tree/main/packages/prettier-preset)
 
 [@tongtian/stylelint-preset](https://github.com/noshower/frontend-presets/tree/main/packages/stylelint-preset)
+
+[@tongtian/jest-config-preset](https://github.com/noshower/frontend-presets/tree/main/packages/jest-config-preset)
