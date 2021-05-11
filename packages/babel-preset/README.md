@@ -91,12 +91,22 @@ process.env.NODE_ENV = "production";
 ### 为测试设置 targets
 
 ```
-{
-  "targets": {
-   "node": "current",
-  },
-  "presets": ["@tongtian/babel-preset"]
-}
+const isTestEnv = process.env.NODE_ENV === 'test';
+module.exports = {
+  targets: isTestEnv
+    ? { node: 'current' }
+    : {
+        browsers: ['last 2 versions', '> 1%', 'ie >= 9'],
+      },
+  presets: [
+    [
+      '@tongtian/babel-preset',
+      {
+        runtime: 'automatic',
+      },
+    ],
+  ]
+};
 ```
 
 当 node 版本保持较新时，有助于提高测试效率。因为减少了测试过程中，代码的转换。
