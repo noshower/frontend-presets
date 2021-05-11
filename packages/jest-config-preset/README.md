@@ -52,6 +52,18 @@ module.exports = {
 - 将 @babel/preset-env 的 modules 选项删除或设置为 'auto'。
 - 测试时，将 babel 的 targets 设置为 {node:'current'}。注意，babel 7.13.0 开始，targets 作为了 babel 的顶级配置选项，低于 7.13.0 版本，targets 是 @babel/preset-env 的配置选项。
 
+```js
+const isTestEnv = process.env.NODE_ENV === 'test';
+module.exports = {
+  targets: isTestEnv
+    ? { node: 'current' }
+    : {
+        browsers: ['last 2 versions', '> 1%', 'ie >= 9'],
+      },
+  ...其他配置,
+};
+```
+
 ### 3.如何让 jest 使用单独的 babel 配置
 
 ```js
