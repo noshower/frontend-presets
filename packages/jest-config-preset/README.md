@@ -22,16 +22,7 @@ module.exports = {
 ## 约定
 
 - 业务代码在根目录的 src 文件下
-- 测试代码在根目录的**tests**文件夹下。
-
-## 个别配置介绍
-
-- **collectCoverageFrom**：指定了统计覆盖率信息时，应该从哪些文件收集信息。该配置将在项目目录下的 src 文件夹中收集测试覆盖率。
-- **moduleFileExtensions**：指定了一组模块文件的扩展名。如果你 require 模块的时候，没有指定文件扩展名，jest 会从左往右匹配文件。注意：如果你项目中使用的是 js,jsx，那么最好覆盖这个配置,将 js,jsx 放到数组的开头。
-- **moduleNameMapper**：这里指定了一些静态资源的 mock。
-- **testMatch**：这里指定**tests**为所有测试文件的根目录。
-- **timers**：这里指定 @sinonjs/fake-timers 作为 fake timers 的 实现
-- **transform**：指定 node_modules 文件中的所有代码不会被转换
+- 测试代码在根目录的 test 文件夹下。
 
 ## 常见问题
 

@@ -10,7 +10,7 @@ module.exports = {
   resetMocks: true, // 每次测试前自动重置 mock 状态
   roots: ['<rootDir>'], // 默认值， jest 会在该配置中的路径下查找文件
   testEnvironment: 'jsdom', // 默认值， 指定测试的环境，jsdom 是类浏览器环境
-  testMatch: ['<rootDir>/__tests__/**/*.{spec,test}.{ts,tsx,js,jsx}'], // 该配置表示，jest 应该在 __tests__ 目录下查找项目的测试文件。 注意：不要同时配置 testMatch 和 testRegex
+  testMatch: ['<rootDir>/test/**/*.{spec,test}.{ts,tsx,js,jsx}'], // 该配置表示，jest 应该在 test 目录下查找项目的测试文件。 注意：不要同时配置 testMatch 和 testRegex
   testRunner: '<rootDir>/node_modules/jest-circus/runner.js', // 指定 test runner
   timers: 'modern', // 指定使用 @sinonjs/fake-timers 这个库的 fake timers 实现
   transform: { '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest' }, // 指定哪些代码需要被编译
