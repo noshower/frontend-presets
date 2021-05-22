@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/noshower/frontend-presets/compare/@tongtian/jest-config-preset@1.2.3...@tongtian/jest-config-preset@2.0.0) (2021-05-22)
+
+
+### Features
+
+* **jest-config-preset:** 修改了预设的默认测试路径 ([95a2076](https://github.com/noshower/frontend-presets/commit/95a2076a01903aefb9e9aa3713d9464a6d9e2a0e))
+
+
+### BREAKING CHANGES
+
+* **jest-config-preset:** 修改了预设的默认测试文件夹
+
+
+
+
+
 ## [1.2.3](https://github.com/noshower/frontend-presets/compare/@tongtian/jest-config-preset@1.2.2...@tongtian/jest-config-preset@1.2.3) (2021-05-22)
 
 

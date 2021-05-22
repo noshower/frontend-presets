@@ -1,6 +1,6 @@
 {
   "name": "@tongtian/jest-config-preset",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "description": "jest 基础的可共享配置",
   "keywords": [
     "jest",
