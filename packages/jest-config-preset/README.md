@@ -13,11 +13,16 @@ npm i --save-dev @tongtian/jest-config-preset
 ## 用法
 
 ```
-//jest-config.js
+//jest.config.js
 module.exports = {
   preset: '@tongtian/jest-config-preset',
 };
 ```
+
+## 约定
+
+- 业务代码在根目录的 src 文件下
+- 测试代码在根目录的**tests**文件夹下。
 
 ## 个别配置介绍
 
