@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/noshower/frontend-presets/compare/@tongtian/jest-config-preset@1.2.2...@tongtian/jest-config-preset@1.2.3) (2021-05-22)
+
+
+### Bug Fixes
+
+* **jest-config-preset:** 修改README.md文档 ([5f54633](https://github.com/noshower/frontend-presets/commit/5f54633f2c60a74beb89c5a2e5f6d7e849bff0ff))
+
+
+
+
+
 ## [1.2.2](https://github.com/noshower/frontend-presets/compare/@tongtian/jest-config-preset@1.2.1...@tongtian/jest-config-preset@1.2.2) (2021-05-11)
 
 **Note:** Version bump only for package @tongtian/jest-config-preset
