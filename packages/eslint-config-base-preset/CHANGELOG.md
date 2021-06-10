@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/noshower/frontend-presets/compare/@tongtian/eslint-config-base-preset@1.1.6...@tongtian/eslint-config-base-preset@1.1.7) (2021-06-10)
+
+
+### Bug Fixes
+
+* 缺少 jest 依赖导致 eslint 跑不起来 ([04242d2](https://github.com/noshower/frontend-presets/commit/04242d2de668b6ccce338048b9d01e879efec7ad))
+
+
+
+
+
 ## [1.1.6](https://github.com/noshower/frontend-presets/compare/@tongtian/eslint-config-base-preset@1.1.5...@tongtian/eslint-config-base-preset@1.1.6) (2021-05-07)
 
 **Note:** Version bump only for package @tongtian/eslint-config-base-preset
