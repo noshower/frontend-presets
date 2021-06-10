@@ -18,7 +18,7 @@ npm install --save-dev @tongtian/eslint-config-base-preset
 
 ### npm 版本 6 及以下
 
-npm install --save-dev @tongtian/eslint-config-base-preset @typescript-eslint/eslint-plugin eslint eslint-config-airbnb-typescript eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-prettier @typescript-eslint/parser
+npm install --save-dev @tongtian/eslint-config-base-preset @typescript-eslint/eslint-plugin eslint eslint-config-airbnb-typescript eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-prettier @typescript-eslint/parser jest
 
 ## 用法
 
